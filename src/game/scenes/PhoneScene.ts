@@ -226,7 +226,7 @@ export default class PhoneScene extends Phaser.Scene {
                 .setInteractive(); // Blocks all clicks
 
             // 3. Create the text
-            const finalMessage = "STAGE ONE COMPLETE\n\nMany more adventures await...\nEpstein Island, a secret Moon Base, and much more!\n\nLeave a like and show your support\nso I know you want to see what happens next!";
+            const finalMessage = "STAGE ONE COMPLETE\n\nMany more adventures await...\nMysterious Private Island, a secret Moon Base, and much more!\n\nLeave a like and show your support\nso I know you want to see what happens next!";
 
             const outroText = this.add.text(960, 540, finalMessage, {
                 fontSize: '46px',
@@ -245,4 +245,5 @@ export default class PhoneScene extends Phaser.Scene {
             });
         });
     }
+
 }
