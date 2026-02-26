@@ -2,6 +2,11 @@
 
 **Solana Quest** is an interactive Web3 game built specifically for the **Solana Graveyard Hack**. It combines engaging 2D gameplay with seamless on-chain mechanics to provide a smooth, next-gen user experience.
 
+links: https://youtu.be/Zk9yZ-Y3VP4
+https://solanaquest-theta.vercel.app/
+https://github.com/ronmylove/solanaquest
+
+
 ## ✨ Key Features
 
 * 🔐 **Seamless Wallet Connect:** Integrated with Phantom for quick, secure, and intuitive onboarding.
