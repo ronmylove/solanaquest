@@ -1,73 +1,31 @@
-# React + TypeScript + Vite
+# 🎮 Solana Quest 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Solana Quest** is an interactive Web3 game built specifically for the **Solana Graveyard Hack**. It combines engaging 2D gameplay with seamless on-chain mechanics to provide a smooth, next-gen user experience.
 
-Currently, two official plugins are available:
+## ✨ Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* 🔐 **Seamless Wallet Connect:** Integrated with Phantom for quick, secure, and intuitive onboarding.
+* ⚡ **MagicBlock Integration:** Utilizes ephemeral rollups for **gasless micro-transactions**. Players can interact with the environment and solve puzzles (like the 15-puzzle mini-game) without needing to sign a transaction for every single move!
+* 💎 **On-Chain NFT Minting:** Players can craft items in their inventory and mint them directly on the Solana blockchain as unique NFTs.
+* 🎬 **Cinematic Lore:** A captivating storyline starting in the real world with a crypto crash, instantly teleporting the player directly into the game universe.
 
-## React Compiler
+## 🔮 Future Roadmap & Possibilities
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The current architecture of **Solana Quest** is designed to be highly scalable. Our vision for future development includes:
 
-## Expanding the ESLint configuration
+* 🏃 **Fully On-Chain Movement:** Implementing zero-gas micro-transactions for *every single player step* using ephemeral rollups, ensuring 100% state verification without ruining the UX.
+* 🌍 **Deep On-Chain World Interactions:** Triggering background transactions and state updates when players pick up items, transition between map locations, or engage in meaningful NPC dialogues.
+* 🧩 **Expanded Quest Ecosystem:** Introducing a wider variety of interactive mini-games and logical puzzles deeply integrated with Solana smart contracts.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
+* **Frontend:** React, TypeScript, Vite
+* **Blockchain:** Solana Web3.js, MagicBlock Engine
+* **Wallet:** Phantom
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 How to run locally
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+If you want to test the game on your local machine, follow these simple steps:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/ronmylove/solanaquest.git](https://github.com/ronmylove/solanaquest.git)
